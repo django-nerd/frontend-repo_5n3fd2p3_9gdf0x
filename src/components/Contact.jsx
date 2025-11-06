@@ -12,7 +12,7 @@ const Contact = () => {
     e.preventDefault();
     try {
       // For now, just simulate success and open mailto
-      const mailto = `mailto:prachi@example.com?subject=Portfolio%20Inquiry%20from%20${encodeURIComponent(form.name)}&body=${encodeURIComponent(form.message)}%0A%0AFrom:%20${encodeURIComponent(form.email)}`;
+      const mailto = `mailto:prachinautiyal001@gmail.com?subject=Portfolio%20Inquiry%20from%20${encodeURIComponent(form.name)}&body=${encodeURIComponent(form.message)}%0A%0AFrom:%20${encodeURIComponent(form.email)}`;
       window.location.href = mailto;
       setStatus('Message composed in your email client.');
       setForm({ name: '', email: '', message: '' });
@@ -32,7 +32,7 @@ const Contact = () => {
         <div className="grid gap-10 md:grid-cols-2">
           <div>
             <p className="text-slate-300/90">Have a project in mind or need a fresh brand identity? I'd love to hear from you.</p>
-            <a href="mailto:prachi@example.com" className="mt-4 inline-block text-cyan-300 underline underline-offset-4 hover:text-cyan-200">prachi@example.com</a>
+            <a href="mailto:prachinautiyal001@gmail.com" className="mt-4 inline-block text-cyan-300 underline underline-offset-4 hover:text-cyan-200">prachinautiyal001@gmail.com</a>
             <div className="mt-6 rounded-xl border border-fuchsia-400/20 bg-gradient-to-br from-white/5 to-white/[0.02] p-6 text-sm text-slate-300/90 shadow-[0_0_30px_rgba(168,85,247,0.12)]">
               <p className="font-medium text-white">Collaboration Notes</p>
               <ul className="mt-2 list-disc space-y-1 pl-5 opacity-90">
