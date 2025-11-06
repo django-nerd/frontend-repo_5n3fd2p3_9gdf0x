@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -6,6 +6,14 @@ import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
 
 function App() {
+  useEffect(() => {
+    const prevBehavior = document.documentElement.style.scrollBehavior;
+    document.documentElement.style.scrollBehavior = 'smooth';
+    return () => {
+      document.documentElement.style.scrollBehavior = prevBehavior;
+    };
+  }, []);
+
   return (
     <div className="min-h-screen bg-black text-slate-100">
       <Navbar />
